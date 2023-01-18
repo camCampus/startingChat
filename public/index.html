@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Starting chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loginContainer">
+
+        <label for="loginInput">Votre Pseudo (min 3)</label>
+        <input type="text" id="loginInput" required />
+        <input type="submit" id="loginSubmit" />
+
+      </div>
+      <section id="chatSection">
+      </form>
+      <ul id="messages"></ul>
+      <form id="chatForm" action="">
+        <input id="chatInput" autocomplete="off" /><button>Send</button>
+      </form>
+      </section>
+    <script id="socketScript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
